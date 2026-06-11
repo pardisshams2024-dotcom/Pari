@@ -1,0 +1,113 @@
+‏<!DOCTYPE html>
+‏<html lang="fa">
+‏<head>
+‏<meta charset="UTF-8">
+‏<meta name="viewport" content="width=device-width, initial-scale=1.0">
+‏<title>پیام ویژه</title>
+‏<style>
+‏    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+‏    body {
+‏        margin: 0;
+‏        padding: 0;
+‏        font-family: 'Vazirmatn', sans-serif;
+‏        background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+‏        color: #2d3436;
+‏        display: flex;
+‏        flex-direction: column;
+‏        align-items: center;
+‏        min-height: 100vh;
+‏        overflow-x: hidden;
+    }
+
+‏    h1 {
+‏        margin-top: 30px;
+‏        text-align: center;
+‏        color: #6c5ce7;
+‏        font-size: 2em;
+‏        animation: fadeIn 1s ease forwards;
+    }
+
+‏    .card {
+‏        background: #ffffffdd;
+‏        border-radius: 15px;
+‏        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+‏        max-width: 700px;
+‏        width: 90%;
+‏        margin: 20px;
+‏        padding: 20px 30px;
+‏        opacity: 0;
+‏        transform: translateY(30px);
+‏        animation: slideUp 0.8s ease forwards;
+    }
+
+‏    .card:nth-child(1) { animation-delay: 0.3s; }
+‏    .card:nth-child(2) { animation-delay: 0.6s; }
+‏    .card:nth-child(3) { animation-delay: 0.9s; }
+‏    .card:nth-child(4) { animation-delay: 1.2s; }
+‏    .card:nth-child(5) { animation-delay: 1.5s; }
+‏    .card:nth-child(6) { animation-delay: 1.8s; }
+
+‏    .highlight {
+‏        color: #d63031;
+‏        font-weight: bold;
+    }
+
+‏    .btn {
+‏        display: inline-block;
+‏        margin-top: 20px;
+‏        padding: 12px 25px;
+‏        font-size: 1em;
+‏        background: #6c5ce7;
+‏        color: #fff;
+‏        border: none;
+‏        border-radius: 50px;
+‏        cursor: pointer;
+‏        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+‏    .btn:hover {
+‏        transform: scale(1.1);
+‏        background: #341f97;
+    }
+
+‏    @keyframes fadeIn {
+‏        from { opacity: 0; transform: translateY(-20px); }
+‏        to { opacity: 1; transform: translateY(0); }
+    }
+
+‏    @keyframes slideUp {
+‏        to { opacity: 1; transform: translateY(0); }
+    }
+
+‏    .response {
+‏        margin-top: 20px;
+‏        font-weight: bold;
+‏        color: #0984e3;
+‏        display: none;
+    }
+‏</style>
+‏</head>
+‏<body>
+
+‏<h1>پیام ویژه برای تو</h1>
+
+‏<div class="card">سلام، من تو رو واقعا داشتم اندازه ایموجی‌هام دوست می‌داشتم.</div>
+‏<div class="card">نمیدونم چرا رفتار ناخواسته من که از سر شلوغی روزم بود باعث شد فکر کنی بی‌توجهم و تو فقط اهمیت یکطرفه میدی و چیزی دریافت نمی‌کنی...</div>
+‏<div class="card">تو لایق توجهی و روز شلوغ توجیه و توضیح خوبی نیست که نوشتمم. معذرت دیروز، اما اینکه فکر می‌کنی باید به زور ازم بخوای توجه کنم یا مدام یادآوری کنی… اشتباهه و واقعا اینطور نبود.</div>
+‏<div class="card">اما تو از قصد گذاشتی چندین ساعت تو نگرانی و انتظار و بی‌خوابی بمونم و در نهایت ازم خداحافظی کردی.</div>
+‏<div class="card">حالا کافیه. صرفا خواستم بگم <span class="highlight">آواکادو بداخلاق شونم</span> رو یا دور بنداز یا تو موهای دوست دختر بعدیت نزن.</div>
+‏<div class="card">در صورت تمایل به اینکه شونه به موهای صاحب اصلی بخوره، عدد <span class="highlight">۸۵</span> رو ارسال کن:</div>
+
+‏<button class="btn" onclick="showResponse()">ارسال ۸۵</button>
+‏<div class="response" id="responseText">عملیات با موفقیت ثبت شد! 🌟</div>
+
+‏<script>
+‏function showResponse() {
+‏    document.getElementById('responseText').style.display = 'block';
+‏    alert('عدد ۸۵ ثبت شد. حالا شونه آماده است! 😎');
+}
+‏</script>
+
+‏</body>
+‏</html>
